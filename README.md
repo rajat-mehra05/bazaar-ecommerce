@@ -13,3 +13,8 @@
 ![js](https://img.shields.io/badge/frontend-js-yellow?style=flat&logo=javaScript)
 
 * Frontend: **HTML**, **CSS**, **Javascript**
+
+## Issues
+
+ - Need to use Tailwind CSS to refactor vanilla CSS
+ - Need to make it responsive with better UI (once I get time 😅)
