@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <nav class="navBar">
+      <span>Bazaar</span>
+    </nav>
+    <div class="wrapper">
+      <div class="filter-section">
+        <h1>Filters</h1>
+        <label for="search">Search</label>
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search favourite clothes"
+        />
+        <label for="sortBy">Sort By:</label>
+        <select name="sortBy" id="sortByFilter">
+          <option value="">Select sort by</option>
+          <option value="h-t-l">High-to-Low</option>
+          <option value="l-t-h">Low-to-High</option>
+        </select>
+
+        <span class="sizes">Sizes</span>
+        <div id="sizes-filter">
+          <label> S <input type="checkbox" name="sizes" value="s" /> </label>
+          <label> M <input type="checkbox" name="sizes" value="m" /> </label>
+          <label> L <input type="checkbox" name="sizes" value="l" /> </label>
+          <label> XL <input type="checkbox" name="sizes" value="xl" /> </label>
+        </div>
+      </div>
+      <div class="product-container"></div>
+    </div>
+  </body>
+</html>
